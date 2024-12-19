@@ -29,8 +29,9 @@ import java.io.File;
 import kg.devcats.pdfviewer.library.remote.DownloadFile;
 import kg.devcats.pdfviewer.library.remote.DownloadFileUrlConnectionImpl;
 import kg.devcats.pdfviewer.library.util.FileUtil;
+import kg.devcats.pdfviewer.library.util.VerticalViewPager;
 
-public class RemotePDFViewPager extends ViewPager implements DownloadFile.Listener {
+public class RemotePDFViewPager extends VerticalViewPager implements DownloadFile.Listener {
     protected Context context;
     protected DownloadFile downloadFile;
     protected DownloadFile.Listener listener;
