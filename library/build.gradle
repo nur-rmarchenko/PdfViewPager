@@ -35,14 +35,15 @@ dependencies {
     implementation libs.androidx.appcompat
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
+afterEvaluate{
+    publishing{
+        publications{
+            release(MavenPublication){
                 from components.release
-                groupId = "kg.devcats"
-                artifactId = "pdfviewer"
-                version = "1.0.0"
+
+                groupId='kg.devcats'
+                artifactId = 'pdfviewer'
+                version = '1.0'
             }
         }
     }
