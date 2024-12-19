@@ -21,16 +21,15 @@ import android.content.Intent;
 
 import java.io.IOException;
 
-import kg.devcats.pdfviewer.library.BuildConfig;
 import kg.devcats.pdfviewer.library.util.FileUtil;
 
 public class CopyAssetService extends IntentService {
     private static final String ACTION_COPY_ASSET =
-            BuildConfig.LIBRARY_PACKAGE_NAME + ".copy_asset";
+            "";//BuildConfig.LIBRARY_PACKAGE_NAME + ".copy_asset";
     private static final String EXTRA_ASSET =
-            BuildConfig.LIBRARY_PACKAGE_NAME + ".asset";
+            "";//BuildConfig.LIBRARY_PACKAGE_NAME + ".asset";
     private static final String EXTRA_DESTINATION =
-            BuildConfig.LIBRARY_PACKAGE_NAME + ".destination_path";
+            "";//BuildConfig.LIBRARY_PACKAGE_NAME + ".destination_path";
 
     public CopyAssetService() {
         super("CopyAssetService");
